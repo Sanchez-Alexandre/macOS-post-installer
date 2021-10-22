@@ -1,0 +1,11 @@
+bash
+fish
+gh
+git
+gnupg
+htop
+jq
+makeicns
+node
+python
+wget
