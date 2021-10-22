@@ -15,12 +15,11 @@ fi
 
 brew update
 
-export -f install
-
 function install () {
   echo "Tapping $1..."
   brew tap $1
 }
+export -f install
 <lists/taps.txt xargs -I % sh -c 'install %'
 
 function install () {
@@ -33,7 +32,6 @@ function install () {
   echo "Installing $1 cask..."
   brew install --cask $1
 }
-export -f install
 <lists/casks.txt xargs -I % sh -c 'install %'
 
 echo "Generating SSH key..."
