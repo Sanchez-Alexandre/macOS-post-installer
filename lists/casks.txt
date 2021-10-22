@@ -1,12 +1,15 @@
 anydesk
 appcleaner
 balenaetcher
+coconutbattery
 discord
 firefox
 font-jetbrains-mono
 github
+google-chrome
 gpg-suite
 grandperspective
+imageoptim
 informant
 inkscape
 insomnia
@@ -17,5 +20,7 @@ protonvpn
 robo-3t
 sf-symbols
 symboliclinker
+transmission
 visual-studio-code
 vlc
+xld
