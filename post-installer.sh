@@ -20,19 +20,19 @@ function install () {
   brew tap $1
 }
 export -f install
-<lists/taps.txt xargs -I % sh -c 'install %'
+<lists/taps.txt xargs -I % sh -c 'install "%"'
 
 function install () {
   echo "Installing $1 formula..."
   brew install $1
 }
-<lists/formulae.txt xargs -I % sh -c 'install %'
+<lists/formulae.txt xargs -I % sh -c 'install "%"'
 
 function install () {
   echo "Installing $1 cask..."
   brew install --cask $1
 }
-<lists/casks.txt xargs -I % sh -c 'install %'
+<lists/casks.txt xargs -I % sh -c 'install "%"'
 
 echo "Generating SSH key..."
 ssh-keygen -t ed25519 -a 128
