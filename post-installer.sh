@@ -27,12 +27,19 @@ function install () {
   brew install $1
 }
 <lists/formulae.txt xargs -I % sh -c 'install "%"'
+install "mas"
 
 function install () {
   echo "Installing $1 cask..."
   brew install --cask $1
 }
 <lists/casks.txt xargs -I % sh -c 'install "%"'
+
+function install () {
+  echo "Installing $1 app..."
+  mas search "$1" | { read appid app_name ; mas install $appid ; }
+}
+<lists/apps.txt xargs -I % sh -c 'install "%"'
 
 echo "Generating SSH key..."
 ssh-keygen -t ed25519 -a 128
