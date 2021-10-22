@@ -1,5 +1,5 @@
 # macOS post installer
-My macOS post installer for install everything I need by executing a single command.
+For set up everything I need by executing a single command.
 
 Inspired by [nicolinuxen/macOS-post-installation](https://github.com/nicolinuxfr/macOS-post-installation)
 
