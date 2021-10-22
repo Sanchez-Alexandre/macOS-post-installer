@@ -13,8 +13,6 @@ cd REPOSITORY_FOLDER
 ## Create your own
 Fork it, edit, delete or add your proper code.
 
-**scripts** folder contains all subscripts to execute. To choose the scripts execution order, just name it in alphabetical or numerical order.
-
 **lists** folder contains everything that will be installed.
 
 **configs** folder contains all files needed.
