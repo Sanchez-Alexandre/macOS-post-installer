@@ -67,7 +67,13 @@ read email
 git config --global user.email "$email"
 
 echo "Setting system..."
+# Allow unindentified developer's apps
 sudo spctl --master-disable
+# Prevent .DS_Store file creation
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+# Set TextEdit default files to plain text
+defaults write com.apple.TextEdit RichText -int 0
 
 echo "Clean up..."
 brew cleanup --prune 0
