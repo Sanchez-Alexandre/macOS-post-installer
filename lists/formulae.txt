@@ -7,5 +7,7 @@ htop
 jq
 makeicns
 node
+node@14
+node@16
 python
 wget
