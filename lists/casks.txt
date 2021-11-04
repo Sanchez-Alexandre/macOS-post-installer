@@ -24,3 +24,5 @@ transmission
 visual-studio-code
 vlc
 xld
+cyberduck
+nordvpn
