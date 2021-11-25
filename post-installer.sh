@@ -1,4 +1,5 @@
 #!/bin/sh
+PATH=/opt/homebrew/bin:$PATH
 
 if ! xcode-select -p 1>/dev/null
 then
@@ -12,8 +13,6 @@ then
   echo "Installing Homebrew..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
-
-PATH=/opt/homebrew/bin:$PATH
 
 brew update
 

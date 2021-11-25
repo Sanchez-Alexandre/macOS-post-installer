@@ -24,6 +24,7 @@ function fish_title
   end
 end
 
+set fish_user_paths /opt/homebrew/bin
 set EDITOR 'code'
 
 alias hide='chflags hidden'
